@@ -1,0 +1,14 @@
+<div>
+  <h1>MARKER</h1>
+</div>
+<section>
+  <google-map
+    [center]="destinos[1]"
+    [zoom]="15"
+    (mapClick)="onMapClick($event)"
+  >
+    <map-marker [position]="destinos[0]"></map-marker>
+    <map-marker [position]="destinos[1]"></map-marker>
+    <map-marker [position]="destinos[2]"></map-marker>
+  </google-map>
+</section>

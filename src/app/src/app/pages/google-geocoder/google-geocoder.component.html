@@ -1,0 +1,16 @@
+<p>google-geocoder works!</p>
+<div>
+  <!-- <form action="getGeolocation($event)">
+    <input type="text">
+    <button type="submit">Obtener</button>
+  </form> -->
+  <button
+    (click)="getGeolocation('1600 Amphitheatre Parkway, Mountain View, CA')"
+  >
+    Obtener Coordenadas
+  </button>
+  <div>
+    <h3>{{ geoLocation.lat }}</h3>
+    <h3>{{ geoLocation.lng }}</h3>
+  </div>
+</div>
